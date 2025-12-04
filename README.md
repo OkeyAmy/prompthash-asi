@@ -73,7 +73,7 @@ Python dependencies are defined in `requirements.txt`:
 
 You need:
 
-- **Python 3.11+** (3.11+ recommended for production)
+- **Python 3.11+** (3.12+ recommended for production)
 - A valid **`ASICLOUD_API_KEY`** to call ASI models (chat, improver, models listing)
 
 ---
