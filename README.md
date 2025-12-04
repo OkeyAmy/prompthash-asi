@@ -73,8 +73,9 @@ Python dependencies are defined in `requirements.txt`:
 
 You need:
 
-- **Python 3.11+** (3.12+ recommended for production)
-- A valid **`ASICLOUD_API_KEY`** to call ASI models (chat, improver, models listing)
+- **Python 3.11 or 3.12** (3.12 strongly recommended for production)  
+  > **Note:** Python 3.13 and later (including 3.14) are **not supported** due to current incompatibility with the `uagents` package.
+- A valid **`ASICLOUD_API_KEY`** to access ASI models (for chat, improver, and model listing endpoints).
 
 ---
 
@@ -345,5 +346,6 @@ For new deployments, prefer using the **FastAPI app** defined in `prompthash_asi
 - Ensure that any changes preserve the existing request/response shapes unless you also update the frontend and dependent clients.
 
 If you extend this service (for example, adding new ASI tools or routes), keep each feature in its own well-structured subfolder (routers, services, schemas) so the project remains modular and scalable.
+
 
 
